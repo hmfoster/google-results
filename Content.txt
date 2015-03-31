@@ -1,1 +1,29 @@
 Content
+-Header
+	-Left: icon and search bar
+	-Right: google links
+-Search options
+	-Left: vertical search tools
+		-More--summary (details)
+		-Search tools--summary (details)
+	-Right: search settings
+-Main
+	-search stats
+	-ads (same format as results)
+	-article
+		Title
+		link
+		more info (summary image) (details)
+		company (summary) (details)
+		Summary
+	-ads
+-Related Searches
+	multi-column link
+-Pages
+	-icon
+	-arrow+next
+	-pages (links)
+-Footer
+	-location; option; learn more
+	-Nav links
+
