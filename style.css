@@ -1,7 +1,8 @@
 body{
 	font-family: arial, sans-serif;
-	color: rgb(100,100,100);
+	color: #808080;
 }
+/*Header*/
 header{
 	background-color: rgb(237, 237, 237);
 	border-bottom: 2px rgb(223,223,223);
@@ -56,7 +57,9 @@ header{
 	text-decoration: none;
 }
 
+/*Search Options*/
 .search-options{
+	color: #808080;
 	text-decoration: none;
 	border-bottom: solid 1px rgb(223,223,223);
 	vertical-align: middle;
@@ -66,6 +69,7 @@ header{
 }
 
 .search-options a, summary{
+	color: #606060;
 	text-decoration: none;
 	display: inline;
 	padding: 20px 0px;
@@ -87,6 +91,7 @@ header{
 	vertical-align: middle;
 	position: relative;
 	padding: 20px 8px;
+	margin-left: 100px;
 }
 
 }
@@ -119,4 +124,28 @@ main{
 	margin-top:20px; 
 	width: 520px;
 	padding-left: 135px;
+}
+
+.results{
+	padding:11px 0;
+}
+.results a{
+	font-size: x-small;
+	text-decoration: none;
+}
+.address{
+	font-size: xx-small;
+	color: green;
+	display:inline;
+}
+.source{
+	display: inline;
+	font-size: xx-small;
+}
+time{
+	display: inline;
+}
+.summary{
+	display: inline;
+	color: #777777;
 }
