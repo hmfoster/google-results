@@ -1,6 +1,7 @@
 body{
 	font-family: arial, sans-serif;
 	color: #808080;
+	overflow: scroll;
 }
 strong{
 	font-weight: bold;
@@ -11,7 +12,7 @@ strong{
 /*Header*/
 header{
 	background-color: rgb(237, 237, 237);
-	border-bottom: 2px rgb(223,223,223);
+	border-bottom: solid 1px rgb(223,223,223);
 	vertical-align: middle;
 	padding:15px 15px 15px 10px;
 }
@@ -35,8 +36,7 @@ header{
 
 .search-bar input{
 	font-size: 18px;
-	max-width:590px;
-	min-width: 490px;
+	width:590px;
 	line-height: 25px;
 	margin-right: 0;
 	background: white url(images/mic.png) center right no-repeat;
@@ -46,7 +46,7 @@ header{
 	padding:0;
 	margin: -7px;
 	height: 30px;
-	border:20px rgb(43, 27, 222);
+	border: solid 1px rgb(43, 27, 222);
 	width: 60px;
 }
 
@@ -78,7 +78,7 @@ header{
 	color: #606060;
 	text-decoration: none;
 	display: inline;
-	padding: 20px 0px;
+	padding: 20px 5px;
 	margin: 0 7px;
 }
 
@@ -96,8 +96,9 @@ header{
 	display: inline;
 	vertical-align: middle;
 	position: relative;
-	padding: 20px 8px;
-	margin-left: 100px;
+	padding: 20px 0 0 0;
+	margin-left: 60px;
+
 }
 
 }
@@ -106,7 +107,12 @@ header{
 	vertical-align: middle;
 }
 #search-settings li{
-	display: inline;
+	display: inline;	
+	margin: 5px
+}
+.results-view a{
+	margin: -4px;
+	padding:0;
 }
 .results-view{
 	margin: 0;
@@ -115,10 +121,6 @@ header{
 #search-settings img{
 	border: solid 1px rgb(208,208,208);
 	border-radius: 2px;
-}
-.results-view a{
-	margin: -4px;
-	vertical-align: middle;
 }
 
 /*Main search results*/
@@ -134,24 +136,30 @@ main{
 }
 
 .results{
-	margin:0 0 23px 0;
+	margin:0 0 18px 0;
 }
 .results h3{
-	line-height: 15px;
+	line-height: 1.2;
 	margin: 0;
-	color: #1a0dab;
 	padding: 0;
+
 }
 
 .results a{
+	color: #1a0dab;
 	margin:0;
 	padding: 0;
 	font-weight: 500;
 	font-size: x-small;
 	text-decoration: none;
+	display: block;
+}
+.source-info{
+	display: block;
 }
 .address{
-	line-height: 10px;
+	height: 17px;
+	line-height: 16px;
 	margin-top: 0;
 	font-size: xx-small;
 	color: green;
@@ -167,39 +175,85 @@ time{
 }
 .summary{
 	font-size: small;
-	display: block;
+	display: inline;
 	color: #545454;
+	line-height: 1.4;
 }
 /*Ads*/
 aside{
+	overflow: scroll;
 	width: 375px;
 	float: left;
 	margin-left: 75px;
 }
 .ad-icon{
-	border-radius: 3px;
+	padding: 0 2px;
+	text-align: center;
+	line-height: 14px;
+	vertical-align: baseline;
+	border-radius: 2px;
 	font-weight: normal;
-	font-size: xx-small;
-	height: 17px;
+	font-size: 12px;
 	width: 26px;
 	color: #ffffff;
-	background-color: orange;
+	background-color: #efc439;
+	margin-bottom: 10px
 }
 .reviews a{
+	display: inline;
 	color: #808080;
+	font-size: small;
+}
+.phone-number a{
+	text-decoration: underline;
 	font-size: small;
 }
 .reviews p{
 	display: inline;
 	font-size: small;
 }
+
 .ad-here a{
 	font-size: 11px;
 	text-decoration: none;
+	vertical-align: top;
 }
+
 /*Related Searches*/
 .related-searches{
+	width: 520px;
+	border-top: solid 1px rgb(223,223,223);
+	border-bottom: solid 1px rgb(223,223,223);
 	clear: both;
-	float: none;
 	display: block;
+	margin-left: 135px;
+}
+.related-searches p{
+	padding:20px 0 10px 0;
+	font-size: 18px;
+}
+.related-searches ul{
+	margin:0 5px 15px 0;
+	display: inline-block;
+}
+.related-searches li{
+	line-height: 1.5;
+}
+.related-searches a{
+	text-decoration: none;
+	font-size: 13px;
+	display: block;
+}
+.pages{
+	width: 520px;
+	text-align: center;
+	margin-left: 135px;
+}
+
+.pages li{
+	display: inline;
+	text-align: left;
+}
+.pages a{
+	text-decoration: none;
 }
