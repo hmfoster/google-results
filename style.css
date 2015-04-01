@@ -133,6 +133,7 @@ main{
 	margin-bottom: 15px;
 }
 .results{
+	line-height: 28px;
 	margin:0 0 23px 0;
 }
 .results h3{
@@ -161,6 +162,7 @@ time{
 	display: inline;
 }
 .summary{
+	font-size: small;
 	display: inline;
-	color: #333333;
+	color: #545454;
 }
