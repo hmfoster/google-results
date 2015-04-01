@@ -6,6 +6,7 @@
 	<title>build this webpage - Google Search</title>
 </head>
 <body>
+
 	<header>
 		<div class="search-bar">
 			<img src="images/googlelogo.png" height="35px" alt="google logo">
@@ -22,27 +23,31 @@
 			</nav>
 		</div>
 	</header>
+
+
 	<section class="search-options">
+		<a href="#" id="selected">Web</a>
 		<div class="vertical-search">
-			<a href="#" id="selected">Web</a>
 			<a href="#">Videos</a>
 			<a href="#">News</a>
 			<a href="#">Shopping</a>
 			<a href="#">Images</a>
 			<summary class="more">
-				<a href="#">More <img src="images/arrow.gif"></a>
+				<a href="#">More <img src="images/arrow.gif" id="arrow"></a>
 			</summary>
 			<summary class="search-tools">
 				<a href="#">Search tools</a>
 			</summary>
 		</div>
-		<div class="search-settings">
-			<div class="results-view">
-				<button><img src="images/private.png"></button>
-				<button><img src="images/global.png"></button>
-			</div>			
-			<button><img src="images/settings.png"></button>
-		</div>
+		<ul id="search-settings">
+			<li class="results-view">
+				<a href="#"><img src="images/private.png"></a>
+				<a href="#"><img src="images/global.png"></a>
+			</li>
+			<li class="settings">			
+				<a href="#"><img src="images/settings.png"></a>
+			</li>
+		</ul>
 	</section>
 	<main>
 		<section class="search-stats">
