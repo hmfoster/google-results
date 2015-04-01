@@ -6,6 +6,9 @@ body{
 strong{
 	font-weight: bold;
 }
+em{
+	font-weight: normal;
+}
 #arrow{
 	width: 10px;
 }
@@ -243,17 +246,66 @@ aside{
 	text-decoration: none;
 	font-size: 13px;
 	display: block;
+	font-weight: bold;
 }
 .pages{
 	width: 520px;
-	text-align: center;
-	margin-left: 135px;
+	margin:35px 0 0 200px;
 }
-
+.numbered{
+	float: left;
+}
+.word{
+	padding: 10px 0 35px 10px;
+	float: left;
+}
+.word p{
+	margin-top: 5px;
+}
+.pages ol{
+	padding-left: 30px;
+}
 .pages li{
 	display: inline;
-	text-align: left;
+	padding: 0;
+	margin:0;
 }
 .pages a{
 	text-decoration: none;
+}
+footer{
+	clear: both;
+	background-color: rgb(237, 237, 237);
+	border-top: solid 1px rgb(223,223,223);
+	vertical-align: middle;
+	padding:15px 15px 15px 135px;
+}
+#bullet{
+	font-size: 40px;
+	vertical-align: middle;
+}
+.location-info p{
+	font-size: small;
+	display: inline;
+	color: #999;
+	vertical-align: middle;
+}
+.location-info a{
+	padding-top: 10px;
+	font-size: small;
+	text-decoration: none;
+	color: #666;
+	vertical-align: middle;
+}
+.google-info{
+	padding: 5px 0;
+}
+.google-info a{
+	text-decoration: none;
+	color: #666;
+	font-size: small;
+}
+.google-info li{
+	padding-right:25px;
+	display: inline;
 }
